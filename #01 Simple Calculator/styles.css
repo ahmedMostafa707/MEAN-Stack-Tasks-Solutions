@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --radius-size: 5px;
+}
+
+form {
+  width: 300px;
+  padding: 15px;
+  margin: 100px auto 0;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#display {
+  width: 100%;
+  height: 45px;
+  text-align: right;
+  font-size: 18px;
+  padding-left: 5px;
+  color: var(--secondary-color);
+  border-radius: var(--radius-size);
+  background-color: var(--primary-color);
+}
+
+#result {
+  width: 100%;
+  height: 65px;
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 5px;
+  color: var(--primary-color);
+}
+
+#btn {
+  width: calc((100% - 30px) / 4);
+  height: 50px;
+  font-size: 18px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  border-radius: var(--radius-size);
+  background-color: var(--primary-color);
+}
+
+#btn.clicked {
+  background-color: #3e3e3e;
+}

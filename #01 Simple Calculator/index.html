@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <audio id="click-sound" src="Files/click.mp3"></audio>
+    <form id="container" action="" name="form">
+      <input id="display" type="text" name="display" disabled />
+      <input id="result" type="text" name="result" disabled />
+
+      <input id="btn" type="button" value="1" onclick="addToValues('1')" />
+      <input id="btn" type="button" value="2" onclick="addToValues('2')" />
+      <input id="btn" type="button" value="3" onclick="addToValues('3')" />
+      <input id="btn" type="button" value="+" onclick="addToOperations('+')" />
+      <input id="btn" type="button" value="4" onclick="addToValues('4')" />
+      <input id="btn" type="button" value="5" onclick="addToValues('5')" />
+      <input id="btn" type="button" value="6" onclick="addToValues('6')" />
+      <input id="btn" type="button" value="-" onclick="addToOperations('-')" />
+      <input id="btn" type="button" value="7" onclick="addToValues('7')" />
+      <input id="btn" type="button" value="8" onclick="addToValues('8')" />
+      <input id="btn" type="button" value="9" onclick="addToValues('9')" />
+      <input id="btn" type="button" value="*" onclick="addToOperations('*')" />
+      <input id="btn" type="button" value="0" onclick="addToValues('0')" />
+      <input id="btn" type="button" value="=" onclick="calculateResult('=')" />
+      <input id="btn" type="button" value="C" onclick="clearExpression()" />
+      <input id="btn" type="button" value="/" onclick="addToOperations('/')" />
+    </form>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
